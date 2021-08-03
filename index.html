@@ -1,1 +1,54 @@
-teset
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        //`백틱 기호로 감싸 문자열 배우 기호를 사용 표현식
+        console.log(`표현식 273+52의 값은 ${273+52}입니다.`);
+        
+        //data
+        const date = new Date();
+            console.log(date.getMonth());
+            console.log(date.getMonth()+ 7);
+
+        //
+        const fruitsA = ['사과','배','바나나']
+        fruitsA[10]='귤'
+        console.log(fruitsA)
+
+        fruitsA.splice(2,7)
+        console.log(fruitsA)
+
+        fruitsA.filter((item) => item !== '귤')
+        console.log(fruitsA)
+
+        fruitsA.splice(1,0,'양파')
+        console.log(fruitsA)
+
+        const 함수 = function() {
+            console.log('함수 내부의 코드입니다. 1')
+            console.log('함수 내부의 코드입니다. 2')
+            console.log('함수 내부의 코드입니다. 3')
+            console.log('함수 내부의 코드입니다. 4')
+        }
+
+        함수()
+        함수()
+        console.log(typeof(함수))
+        console.log(함수)
+
+        function min(array){
+            let output = array[0]
+            return output
+        }
+
+        const testArray=[52,267,23,23,24,234]
+        console.log(`최소값 = ${min(testArray)}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>>
