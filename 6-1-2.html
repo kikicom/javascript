@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+       const student = {}
+       student.이름  = '윤인성'
+       student.취미  = '악기'
+       student.장래희망  = '생명공학자'
+
+       const pet = {
+            name : '구름',
+            eat : (food) => {
+                alert(this.name +'은/는' + food+'을/')
+            }
+       }
+
+       pet.eat('밥')
+
+       //
+
+         const test = {
+            a : function(){
+                console.log(this)
+            }
+            ,
+            b : () => {
+                console.log(this)
+            }
+       }
+
+       test.a()                          
+       test.b()                          
+    </script>
+</head>
+<body>
+    
+</body>
+</html>>
